@@ -1,3 +1,5 @@
+import EmployeeDashboard from "../Components/Dashboard/EmployeeDashboard";
+
 const employees =  [
   {
     "empId": "EMP001",
@@ -341,8 +343,7 @@ export const setLocalStorage = () => {
 }
 
 export const getLocalStorage = () => {
-    const employeesData = JSON.parse(localStorage.getItem('employees'));
-    const adminData = JSON.parse(localStorage.getItem('admin'));
-    console.log('Employees:', employeesData);
-    console.log('Admin:', adminData);    
+    const employees = JSON.parse(localStorage.getItem('employees'));
+    const admin = JSON.parse(localStorage.getItem('admin'));
+    return {employees, admin}  
 }
