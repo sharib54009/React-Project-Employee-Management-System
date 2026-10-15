@@ -1,10 +1,17 @@
 import EmployeeDashboard from "../Components/Dashboard/EmployeeDashboard";
 
-const employees =  [
+const employeeData = [
   {
     "empId": "EMP001",
+    "firstName": "Rahul",
     "email": "employee1@example.com",
     "password": "123",
+    "taskNumbers": {
+      "active": 3,
+      "newTask": 2,
+      "completed": 1,
+      "failed": 1
+    },
     "tasks": [
       {
         "active": true,
@@ -60,8 +67,15 @@ const employees =  [
   },
   {
     "empId": "EMP002",
+    "firstName": "Priya",
     "email": "employee2@example.com",
     "password": "123",
+    "taskNumbers": {
+      "active": 3,
+      "newTask": 2,
+      "completed": 2,
+      "failed": 1
+    },
     "tasks": [
       {
         "active": true,
@@ -99,7 +113,7 @@ const employees =  [
         "completed": true,
         "failed": false,
         "taskTitle": "Update Documentation",
-        "taskDesc": "Update the project documentation with the latest changes.",
+        "taskDesc": "Update project documentation with the latest changes.",
         "taskDate": "2026-09-20",
         "category": "Documentation"
       },
@@ -127,8 +141,15 @@ const employees =  [
   },
   {
     "empId": "EMP003",
+    "firstName": "Aman",
     "email": "employee3@example.com",
     "password": "123",
+    "taskNumbers": {
+      "active": 4,
+      "newTask": 2,
+      "completed": 2,
+      "failed": 1
+    },
     "tasks": [
       {
         "active": true,
@@ -204,8 +225,15 @@ const employees =  [
   },
   {
     "empId": "EMP004",
+    "firstName": "Sneha",
     "email": "employee4@example.com",
     "password": "123",
+    "taskNumbers": {
+      "active": 2,
+      "newTask": 1,
+      "completed": 2,
+      "failed": 0
+    },
     "tasks": [
       {
         "active": true,
@@ -251,8 +279,15 @@ const employees =  [
   },
   {
     "empId": "EMP005",
+    "firstName": "Vikram",
     "email": "employee5@example.com",
     "password": "123",
+    "taskNumbers": {
+      "active": 4,
+      "newTask": 2,
+      "completed": 2,
+      "failed": 1
+    },
     "tasks": [
       {
         "active": true,

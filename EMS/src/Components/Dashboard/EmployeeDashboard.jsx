@@ -8,9 +8,9 @@ const EmployeeDashboard = ({data}) => {
   return (
     <div className = "p-10  bg-[#1c1c1c] h-screen ">
       <h1>{data.id}</h1>
-      <Header />
-      <TaskListNumbers />
-      <TaskList />
+      <Header data = {data}/>
+      <TaskListNumbers  data = {data} />
+      <TaskList data = {data} />
     </div>
   )
 }
