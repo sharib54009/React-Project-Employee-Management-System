@@ -1,6 +1,6 @@
 import EmployeeDashboard from "../Components/Dashboard/EmployeeDashboard";
 
-const employeeData = [
+const employees = [
   {
     "empId": "EMP001",
     "firstName": "Rahul",
