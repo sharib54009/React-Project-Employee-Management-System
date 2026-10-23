@@ -16,6 +16,14 @@ const AcceptTask = () => {
           Lorem ipsum, dolor sit amet consectetur adipisicing elit. Perferendis
           dolore neque odio minus ullam sapiente corrupti quod{" "}
         </p>
+        <div className = "flex justify-between mt-4">
+          <button className = 'bg-green-500 py-1 px-2 text-xs text-white rounded-md'>
+            Mark as completed
+          </button>
+          <button className = 'bg-red-500 py-1 px-2 text-xs text-white rounded-md'>
+            Mark as failed
+          </button>
+        </div>
       </div>
   )
 }
