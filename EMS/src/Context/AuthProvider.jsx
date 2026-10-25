@@ -5,6 +5,7 @@ export const AuthContext = createContext()
 
 
 const data = getLocalStorage()
+localStorage.clear()
 
 
 const AuthProvider = ({children}) => {

@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react'
+import React, { useContext, useEffect, useState } from 'react'
 import Login from './Components/Auth/Login'
 import EmployeeDashboard from './Components/Dashboard/EmployeeDashboard'
 import AdminDashboard from './Components/Dashboard/AdminDashboard'
@@ -42,7 +42,7 @@ const App = () => {
 
         localStorage.setItem(
           'loggedInUser',
-          JSON.stringify({ role: "Employee" })
+          JSON.stringify({ role: "Employee", })
         )
 
         return
@@ -52,6 +52,17 @@ const App = () => {
     // Invalid login
     console.log("Invalid Credentials")
   }
+
+  useEffect(()=>{
+    const loggedInUser = localStorage.getItem("loggedInUser")
+
+    if (loggedInUser){
+      const userData = JSON.parse(loggedInUser)
+      setUser(userData.role)
+      setLoggedInUser(userData.data)
+      
+    }
+  }, [])
 
   return (
     <>
